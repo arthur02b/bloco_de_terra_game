@@ -37,7 +37,7 @@ public class Caverna {
     private boolean eventoMonstro(Steve steve) {
         Inimigo inimigo = gerarInimigo(steve.getNivel());
         System.out.println("\n  Um " + inimigo.getNome() + " apareceu na sua frente!");
-        System.out.println("  " + inimigo.getNome() + ": " + inimigo.exibirCoracoes() + " (" + inimigo.getCoracoes() + ")");
+        System.out.println("  "); /// .+ inimigo.getNome() + ": " + inimigo.exibirCoracoes() + " (" + inimigo.getCoracoes() + ")".
 
         return combate.executar(steve, inimigo);
     }

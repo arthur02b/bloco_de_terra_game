@@ -18,17 +18,13 @@ public class Main {
     private static void exibirIntro() {
         System.out.println("==============================================");
         System.out.println("          BLOCO DE TERRA");
-        System.out.println("       Um RPG nas profundezas");
         System.out.println("==============================================");
         System.out.println();
-        System.out.println(" O sol esta se pondo no horizonte pixelado.");
-        System.out.println(" Steve para na beira de uma caverna.");
-        System.out.println(" La dentro, e escuro. Barulhos ecoam.");
-        System.out.println(" Algo la no fundo o chama - ele ainda nao sabe o que e.");
+        System.out.println(" O sol esta se pondo no horizonte quadrado.");
+        System.out.println(" Steve esta perto de uma caverna.");
+        System.out.println(" La dentro, eh escuro.");
         System.out.println();
         System.out.println(" Antes de descer, um bau velho chama atencao.");
-        System.out.println(" Alguem deixou para tras. Talvez esperando que");
-        System.out.println(" alguem corajoso o bastante aparecesse.");
         System.out.println();
         System.out.println(" [1] Iniciar jogo");
         System.out.print(" Escolha: ");
@@ -38,7 +34,7 @@ public class Main {
     private static void abrirBauInicial(Steve steve) {
         System.out.println();
         System.out.println("==============================================");
-        System.out.println(" BAU INICIAL");
+        System.out.println("          BAU INICIAL");
         System.out.println("==============================================");
         System.out.println(" Voce encontra um bau com alguns itens basicos:");
         System.out.println();
@@ -59,7 +55,6 @@ public class Main {
         System.out.println();
         System.out.println("==============================================");
         System.out.println(" Steve entra na caverna.");
-        System.out.println(" O calor do sol some. So pedra e escuridao.");
         System.out.println("==============================================");
 
         Caverna caverna = new Caverna(scanner);
@@ -108,9 +103,10 @@ public class Main {
                 steve.exibirStatus();
 
             } else {
-                System.out.println("\n Steve recua para a entrada da caverna.");
-                System.out.println(" Alguns chamados ficam sem resposta.");
+                System.out.println("\n Steve volta para a entrada da caverna.");
                 System.out.println("\n Fim de jogo. Voce saiu.");
+                System.out.println();
+
                 break;
             }
         }
@@ -120,10 +116,10 @@ public class Main {
 
     private static boolean enfrentarBoss(Steve steve) {
         System.out.println("\n==============================================");
-        System.out.println(" A caverna fica mais silenciosa do que nunca.");
-        System.out.println(" Steve sente o chao tremer levemente.");
+        System.out.println(" A caverna fica mais tensa do que nunca.");
+        System.out.println(" Steve eh consumido pelo medo.");
         System.out.println(" La na frente, dois olhos brilham no escuro.");
-        System.out.println(" Pequenos. Rapidos. Com muita fome.");
+        System.out.println(" Pequenos. Rapidos. Com muita raiva.");
         System.out.println();
         System.out.println("   *** O ZUMBI BEBE APARECEU! ***");
         System.out.println();

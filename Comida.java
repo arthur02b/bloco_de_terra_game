@@ -11,6 +11,6 @@ public class Comida extends Item {
 
     @Override
     public String getDescricao() {
-        return nome + " [" + raridade + "] — restaura " + cura + " coracao(es)";
+        return nome + " [" + raridade + "] - restaura " + cura + " coracoes";
     }
 }

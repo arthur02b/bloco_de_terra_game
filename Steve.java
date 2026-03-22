@@ -23,14 +23,14 @@ public class Steve extends Entidade {
     public void atacar(Entidade alvo) {
         int dano = espadaEquipada != null ? espadaEquipada.getBonusAtaque() : 1;
         alvo.receberDano(dano);
-        System.out.println("  Steve atacou " + alvo.getNome() + " com " + dano + " de dano.");
+        System.out.println("  Steve atacou " + alvo.getNome() + " com " + dano + " de dano!");
     }
 
     public void comer(Comida comida) {
         int coracoesAntes = this.coracoes;
         this.coracoes = Math.min(this.coracoes + comida.getCura(), this.coracoesMaximos);
         int curado = this.coracoes - coracoesAntes;
-        System.out.println("  Steve comeu " + comida.getNome() + " e recuperou " + curado + " coracao(es).");
+        System.out.println("  Steve comeu " + comida.getNome() + " e recuperou " + curado + " coracoes.");
         inventario.remove(comida);
     }
 
@@ -61,7 +61,7 @@ public class Steve extends Entidade {
             if (nova.getBonusAtaque() > danoAtual) {
                 equiparEspada(nova);
             } else {
-                System.out.println("  Espada " + nova.getNome() + " e mais fraca que a atual. Deixada para tras.");
+                System.out.println("  Espada " + nova.getNome() + " e mais fraca que a atual. ");
             }
         } else {
             inventario.add(item);

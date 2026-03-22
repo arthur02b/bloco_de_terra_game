@@ -35,6 +35,6 @@ public class Espada extends Item {
 
     @Override
     public String getDescricao() {
-        return nome + " [" + raridade + "] — +" + bonusAtaque + " de ataque";
+        return nome + " [" + raridade + "] - " + bonusAtaque + " de ataque";
     }
 }

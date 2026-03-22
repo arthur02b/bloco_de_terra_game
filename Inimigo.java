@@ -11,7 +11,7 @@ public abstract class Inimigo extends Entidade {
 
     @Override
     public void atacar(Entidade alvo) {
-        alvo.receberDano(dano);
+        alvo.receberDano(dano);        
         System.out.println("  " + nome + " atacou Steve com " + dano + " de dano!");
     }
 

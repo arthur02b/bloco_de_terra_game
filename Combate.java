@@ -13,10 +13,10 @@ public class Combate {
         System.out.println(" =============================");
 
         while (steve.estaVivo() && inimigo.estaVivo()) {
-
+            System.out.println();
             System.out.println(" Steve: " + steve.exibirCoracoes() + " (" + steve.getCoracoes() + "/" + steve.getCoracoesMaximos() + ")");
             System.out.println(" " + inimigo.getNome() + ": " + inimigo.exibirCoracoes() + " (" + inimigo.getCoracoes() + ")");
-
+            ///System.out.println();
             System.out.println("\n O que voce faz?");
             System.out.println(" [1] Atacar");
             System.out.println(" [2] Usar item");
